@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: learnindia-mission4
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+    disk:
+      name: learnindia-profile-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

@@ -1,0 +1,20 @@
+{
+  "LI-EF8C056F": {
+    "learnIndiaId": "LI-EF8C056F",
+    "ownerKey": "5a82d67dcd4b27a12372994639138122f6d4a1266886d93912b538ffc5725cd5",
+    "name": "Chandan Maurya",
+    "city": "lucknow",
+    "email": "chandanmaurya56678@gmail.com",
+    "phone": "8510092275",
+    "website": "",
+    "publicFields": {
+      "name": true,
+      "city": true,
+      "email": false,
+      "phone": false,
+      "website": true
+    },
+    "createdAt": "2026-09-13T16:51:01.243Z",
+    "updatedAt": "2026-09-13T16:51:52.337Z"
+  }
+}

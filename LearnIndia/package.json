@@ -1,0 +1,13 @@
+{
+  "name": "learnindia-mission4",
+  "version": "4.0.0",
+  "private": true,
+  "description": "LearnIndia Mission 4 - online privacy-first QR profile sharing",
+  "main": "server/server.js",
+  "scripts": { "start": "node server/server.js", "dev": "node server/server.js" },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "express-rate-limit": "^8.1.0"
+  }
+}
