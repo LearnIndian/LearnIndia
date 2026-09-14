@@ -1,36 +1,46 @@
-# LearnIndia 🇮🇳 — Mission 1–4
+# 🇮🇳 LearnIndia
 
-Complete LearnIndia website with learning, progress, favourites, QR profile sharing, and online cross-device profiles.
+### Learn. Share. Grow.
 
-## Mission 4 deployment requirement
-For QR sharing to work between different phones, deploy this project as a **Node.js web service over HTTPS**. Do not open `index.html` with `file://`.
+LearnIndia is a student-focused learning platform designed to make learning, progress tracking, and privacy-first profile sharing simple and accessible.
 
-The included `render.yaml` is ready for a Node web service and persistent disk. After deployment, the same HTTPS origin serves the website and `/api/profile` API, so QR links automatically point to the live server.
+## 🌐 Live Website
 
-### Render settings
-- Build: `npm install`
-- Start: `npm start`
-- Health check: `/api/health`
-- Persistent disk mounted at `/opt/render/project/src/data`
+https://learnindian.github.io/LearnIndia/
 
-A managed database or persistent disk is required for profiles to survive server restarts/redeploys. The included JSON store is intentionally simple and suitable for this project; for very large scale, migrate the store to a managed database.
+## ✨ Features
 
-## Cross-device acceptance test
-1. Phone A opens the live HTTPS LearnIndia URL.
-2. Save a profile online and receive `LI-XXXXXXXX`.
-3. Generate the QR.
-4. Phone B scans the QR and sees the public profile from the server.
-5. Change a public field on Phone A, save, then refresh Phone B.
-6. Private email/phone remain hidden unless enabled.
-7. Delete the profile from Phone A; Phone B can no longer retrieve it.
-8. Restart the server and confirm the profile remains when persistent storage is enabled.
+- 📚 Learning Library
+- 🔎 Course search and filtering
+- 📈 Learning progress tracking
+- ⭐ Favourite courses
+- 👤 Student profile
+- 📱 QR profile sharing
+- 🔒 Privacy-controlled information sharing
+- 📷 QR scanner
+- 📱 Mobile responsive design
+- 💻 Desktop responsive design
+- ⚙️ Node.js backend
+- 🌐 Online profile support
 
-## Security
-- Helmet security headers
-- Rate limits for general API, writes, reads, and deletes
-- Owner-key verification for updates/deletes
-- Timing-safe owner-key comparison
-- Public API only returns explicitly public fields
-- Email/phone private by default
-- Public profile responses are not cached
-- Website URLs are restricted to HTTP/HTTPS
+## 🛠️ Technology
+
+- HTML5
+- CSS3
+- JavaScript
+- Node.js
+- Express
+- GitHub Pages
+
+## 🚀 Project Structure
+
+```text
+LearnIndia/
+├── index.html
+├── package.json
+├── render.yaml
+├── README.md
+├── server/
+│   └── server.js
+└── data/
+    └── profiles.json
